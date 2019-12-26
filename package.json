@@ -1,0 +1,22 @@
+{
+  "name": "nova-radar-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiwinam/nova-radar-nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiwinam/nova-radar-nodejs/issues"
+  },
+  "homepage": "https://github.com/kiwinam/nova-radar-nodejs#readme",
+  "devDependencies": {
+    "serverless-offline": "^5.12.1"
+  }
+}

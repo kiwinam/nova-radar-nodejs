@@ -13,8 +13,8 @@
 
 service: nova-radar-nodejs
 # app and org for use with dashboard.serverless.com
-#app: your-app-name
-#org: your-org-name
+app: nova-radar-nodejs-app
+org: mals930125
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
@@ -58,15 +58,12 @@ provider:
 #    - exclude-me-dir/**
 
 functions:
-  hello:
-    handler: handler.hello
-#    The following are a few example events you can configure
-#    NOTE: Please make sure to change your handler code to work with those events
-#    Check the event documentation for details
-#    events:
-#      - http:
-#          path: users/create
-#          method: get
+    hello:
+        handler: handler.hello
+        events:
+            - http:
+                path: users/create
+                method: get
 #      - websocket: $connect
 #      - s3: ${env:BUCKET}
 #      - schedule: rate(10 minutes)
@@ -111,3 +108,6 @@ functions:
 #     NewOutput:
 #       Description: "Description for the output"
 #       Value: "Some output value"
+
+plugins:
+        - serverless-offline
